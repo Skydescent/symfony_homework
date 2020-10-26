@@ -4,7 +4,7 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'a
 
 
 $app = new \Symfony\Component\Console\Application('simple_console_app');
-
+$app->add(new \App\RepeatCommand());
 $app->add(new \App\SayHelloCommand());
 
 $app->run();
